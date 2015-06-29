@@ -5,9 +5,9 @@ var Matrix = require("../Matrix").Matrix;
 var Direction = require("../Direction").Direction;
 
 describe("The Matrix Rotator", function () {
-  
+
   var matrixRotator = new MatrixRotator(Matrix.matrix1);
-  
+
   it("can rotate Clockwise", function () {
     matrixRotator.rotate(Direction.CW);
     matrixRotator.matrix.should.be.deep.equal( [
@@ -21,7 +21,7 @@ describe("The Matrix Rotator", function () {
   });
 
   it("can rotate CounterClockwise", function () {
-    matrixRotator.rotate(Direction.CCW);
+  var matrixRotator = new MatrixRotator(Matrix.matrix1);
     matrixRotator.rotate(Direction.CCW);
     matrixRotator.matrix.should.be.deep.equal([
                                             [3,7,0,3,7],
@@ -32,4 +32,4 @@ describe("The Matrix Rotator", function () {
                                           ]);
   });
 
-});    
+});
